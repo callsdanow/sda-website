@@ -1,0 +1,74 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181C26"/>
+      <stop offset="100%" stop-color="#0F1117"/>
+    </linearGradient>
+    <radialGradient id="glow6" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg6)"/>
+  <rect width="600" height="450" fill="url(#glow6)"/>
+
+  <!-- Ceiling line -->
+  <line x1="0" y1="90" x2="600" y2="90" stroke="#272B36" stroke-width="2"/>
+
+  <!-- Access point mounted on ceiling -->
+  <g transform="translate(270,55)">
+    <ellipse cx="30" cy="0" rx="38" ry="10" fill="#181C26" stroke="#3A4150" stroke-width="2"/>
+    <rect x="22" y="0" width="16" height="14" fill="#232833"/>
+    <circle cx="30" cy="3" r="3" fill="#22C55E"/>
+  </g>
+
+  <!-- Wi-Fi signal arcs -->
+  <g stroke="#3B82F6" fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M 150 230 A 150 150 0 0 1 450 230" opacity="0.25"/>
+    <path d="M 190 250 A 110 110 0 0 1 410 250" opacity="0.4"/>
+    <path d="M 230 270 A 70 70 0 0 1 370 270" opacity="0.6"/>
+  </g>
+
+  <!-- Office floor with devices -->
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#272B36" stroke-width="2"/>
+
+  <!-- Desks with devices connected -->
+  <g>
+    <!-- Laptop 1 -->
+    <rect x="90" y="300" width="60" height="38" rx="4" fill="#181C26" stroke="#3A4150" stroke-width="1.5"/>
+    <rect x="96" y="306" width="48" height="26" rx="2" fill="#0F1117"/>
+    <path d="M 120 250 Q 100 280 120 305" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 4" fill="none" opacity="0.6"/>
+
+    <!-- Laptop 2 -->
+    <rect x="270" y="300" width="60" height="38" rx="4" fill="#181C26" stroke="#2563EB" stroke-width="1.5"/>
+    <rect x="276" y="306" width="48" height="26" rx="2" fill="#0F1117"/>
+    <path d="M 300 240 Q 300 270 300 305" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 4" fill="none" opacity="0.8"/>
+
+    <!-- Tablet -->
+    <rect x="420" y="305" width="44" height="32" rx="5" fill="#181C26" stroke="#3A4150" stroke-width="1.5"/>
+    <rect x="426" y="311" width="32" height="20" rx="2" fill="#0F1117"/>
+    <path d="M 442 250 Q 460 280 442 308" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 4" fill="none" opacity="0.6"/>
+
+    <!-- Phone -->
+    <rect x="500" y="300" width="22" height="38" rx="5" fill="#181C26" stroke="#3A4150" stroke-width="1.5"/>
+    <rect x="504" y="306" width="14" height="22" rx="1.5" fill="#0F1117"/>
+  </g>
+
+  <!-- VLAN labels -->
+  <g font-family="Inter, sans-serif" font-size="11" fill="#64748B">
+    <rect x="55" y="100" width="100" height="24" rx="12" fill="rgba(37,99,235,0.12)" stroke="#2563EB" stroke-width="1"/>
+    <text x="105" y="116" text-anchor="middle" fill="#93C5FD">STAFF VLAN</text>
+
+    <rect x="440" y="100" width="105" height="24" rx="12" fill="rgba(148,163,184,0.1)" stroke="#3A4150" stroke-width="1"/>
+    <text x="492" y="116" text-anchor="middle" fill="#94A3B8">GUEST VLAN</text>
+  </g>
+
+  <text x="300" y="400" font-family="Inter, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Wi-Fi 6 · Seamless Roaming · Site-Surveyed Coverage</text>
+
+  <g stroke="#2563EB" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M 30 30 L 30 55 M 30 30 L 55 30"/>
+    <path d="M 570 30 L 570 55 M 570 30 L 545 30"/>
+    <path d="M 30 420 L 30 395 M 30 420 L 55 420"/>
+    <path d="M 570 420 L 570 395 M 570 420 L 545 420"/>
+  </g>
+</svg>

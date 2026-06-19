@@ -1,0 +1,67 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181C26"/>
+      <stop offset="100%" stop-color="#0F1117"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="scan1" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="3" fill="rgba(0,0,0,0)"/>
+      <rect y="3" width="4" height="1" fill="rgba(0,0,0,0.18)"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg1)"/>
+  <rect width="600" height="450" fill="url(#glow1)"/>
+
+  <!-- Mounting wall line -->
+  <line x1="0" y1="120" x2="600" y2="120" stroke="#272B36" stroke-width="2"/>
+
+  <!-- Camera arm -->
+  <rect x="280" y="60" width="14" height="65" rx="4" fill="#3A4150"/>
+
+  <!-- Camera body -->
+  <g transform="translate(220,95) rotate(18 70 35)">
+    <rect x="0" y="10" width="150" height="60" rx="14" fill="#232833" stroke="#3A4150" stroke-width="2"/>
+    <circle cx="125" cy="40" r="22" fill="#0F1117" stroke="#2563EB" stroke-width="2.5"/>
+    <circle cx="125" cy="40" r="12" fill="#111827"/>
+    <circle cx="131" cy="34" r="3.5" fill="#3B82F6"/>
+    <rect x="12" y="22" width="50" height="6" rx="3" fill="#3A4150"/>
+    <!-- IR LEDs -->
+    <circle cx="100" cy="22" r="3" fill="#EF4444" opacity="0.85"/>
+    <circle cx="110" cy="22" r="3" fill="#EF4444" opacity="0.6"/>
+  </g>
+
+  <!-- Detection cone -->
+  <path d="M 325 150 L 130 380 L 540 380 Z" fill="#2563EB" opacity="0.08"/>
+  <path d="M 325 150 L 130 380" stroke="#2563EB" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 6"/>
+  <path d="M 325 150 L 540 380" stroke="#2563EB" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 6"/>
+
+  <!-- Building silhouette below -->
+  <rect x="60" y="330" width="480" height="100" fill="#181C26" stroke="#272B36" stroke-width="2"/>
+  <rect x="90" y="355" width="50" height="45" fill="#0F1117" stroke="#2563EB" stroke-width="1.5" opacity="0.6"/>
+  <rect x="170" y="355" width="50" height="45" fill="#0F1117" stroke="#272B36" stroke-width="1.5"/>
+  <rect x="250" y="355" width="50" height="45" fill="#0F1117" stroke="#272B36" stroke-width="1.5"/>
+  <rect x="330" y="355" width="50" height="45" fill="#0F1117" stroke="#2563EB" stroke-width="1.5" opacity="0.6"/>
+  <rect x="410" y="355" width="50" height="45" fill="#0F1117" stroke="#272B36" stroke-width="1.5"/>
+  <rect x="460" y="350" width="40" height="80" fill="#0F1117" stroke="#272B36" stroke-width="1.5"/>
+
+  <!-- REC indicator -->
+  <g transform="translate(440,40)">
+    <circle cx="0" cy="0" r="5" fill="#EF4444"/>
+    <text x="14" y="5" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC" letter-spacing="2">REC</text>
+  </g>
+
+  <!-- Corner viewfinder brackets -->
+  <g stroke="#2563EB" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M 30 30 L 30 55 M 30 30 L 55 30"/>
+    <path d="M 570 30 L 570 55 M 570 30 L 545 30"/>
+    <path d="M 30 420 L 30 395 M 30 420 L 55 420"/>
+    <path d="M 570 420 L 570 395 M 570 420 L 545 420"/>
+  </g>
+
+  <rect width="600" height="450" fill="url(#scan1)" opacity="0.5"/>
+</svg>

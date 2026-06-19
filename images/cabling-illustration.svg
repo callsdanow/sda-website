@@ -1,0 +1,89 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181C26"/>
+      <stop offset="100%" stop-color="#0F1117"/>
+    </linearGradient>
+    <radialGradient id="glow5" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg5)"/>
+  <rect width="600" height="450" fill="url(#glow5)"/>
+
+  <!-- Patch panel frame -->
+  <rect x="70" y="100" width="460" height="100" rx="8" fill="#181C26" stroke="#3A4150" stroke-width="2.5"/>
+  <text x="90" y="92" font-family="Inter, sans-serif" font-size="12" fill="#64748B">PATCH PANEL — 24 PORT</text>
+
+  <!-- Ports row 1 -->
+  <g fill="#1E2330" stroke="#3A4150" stroke-width="1.2">
+    <rect x="90" y="120" width="26" height="22" rx="3"/>
+    <rect x="124" y="120" width="26" height="22" rx="3"/>
+    <rect x="158" y="120" width="26" height="22" rx="3"/>
+    <rect x="192" y="120" width="26" height="22" rx="3" stroke="#2563EB"/>
+    <rect x="226" y="120" width="26" height="22" rx="3"/>
+    <rect x="260" y="120" width="26" height="22" rx="3"/>
+    <rect x="294" y="120" width="26" height="22" rx="3" stroke="#2563EB"/>
+    <rect x="328" y="120" width="26" height="22" rx="3"/>
+    <rect x="362" y="120" width="26" height="22" rx="3"/>
+    <rect x="396" y="120" width="26" height="22" rx="3"/>
+    <rect x="430" y="120" width="26" height="22" rx="3" stroke="#2563EB"/>
+    <rect x="464" y="120" width="26" height="22" rx="3"/>
+  </g>
+  <!-- Ports row 2 -->
+  <g fill="#1E2330" stroke="#3A4150" stroke-width="1.2">
+    <rect x="90" y="155" width="26" height="22" rx="3" stroke="#2563EB"/>
+    <rect x="124" y="155" width="26" height="22" rx="3"/>
+    <rect x="158" y="155" width="26" height="22" rx="3"/>
+    <rect x="192" y="155" width="26" height="22" rx="3"/>
+    <rect x="226" y="155" width="26" height="22" rx="3"/>
+    <rect x="260" y="155" width="26" height="22" rx="3" stroke="#2563EB"/>
+    <rect x="294" y="155" width="26" height="22" rx="3"/>
+    <rect x="328" y="155" width="26" height="22" rx="3"/>
+    <rect x="362" y="155" width="26" height="22" rx="3"/>
+    <rect x="396" y="155" width="26" height="22" rx="3"/>
+    <rect x="430" y="155" width="26" height="22" rx="3"/>
+    <rect x="464" y="155" width="26" height="22" rx="3"/>
+  </g>
+
+  <!-- Cables flowing down, color-coded and tidy -->
+  <g fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M 103 142 C 103 220, 150 230, 150 300" stroke="#3B82F6" opacity="0.8"/>
+    <path d="M 205 142 C 205 200, 230 210, 230 300" stroke="#3B82F6" opacity="0.5"/>
+    <path d="M 307 142 C 307 210, 280 220, 280 300" stroke="#22C55E" opacity="0.6"/>
+    <path d="M 443 142 C 443 200, 400 215, 400 300" stroke="#3B82F6" opacity="0.5"/>
+    <path d="M 273 155 C 273 230, 330 240, 330 300" stroke="#F59E0B" opacity="0.55"/>
+    <path d="M 103 165 C 103 240, 420 250, 420 300" stroke="#3B82F6" opacity="0.35"/>
+  </g>
+
+  <!-- Cable management bar -->
+  <rect x="120" y="295" width="360" height="10" rx="5" fill="#272B36"/>
+
+  <!-- Labels hanging off cables -->
+  <g font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">
+    <rect x="138" y="305" width="44" height="18" rx="3" fill="#181C26" stroke="#3A4150" stroke-width="1"/>
+    <text x="160" y="317" text-anchor="middle">A-102</text>
+
+    <rect x="258" y="305" width="44" height="18" rx="3" fill="#181C26" stroke="#3A4150" stroke-width="1"/>
+    <text x="280" y="317" text-anchor="middle">A-205</text>
+
+    <rect x="378" y="305" width="44" height="18" rx="3" fill="#181C26" stroke="#3A4150" stroke-width="1"/>
+    <text x="400" y="317" text-anchor="middle">A-310</text>
+  </g>
+
+  <!-- Switch below -->
+  <rect x="120" y="345" width="360" height="40" rx="6" fill="#181C26" stroke="#3A4150" stroke-width="2"/>
+  <g fill="#22C55E">
+    <circle cx="140" cy="365" r="3"/><circle cx="155" cy="365" r="3"/><circle cx="170" cy="365" r="3"/>
+    <circle cx="185" cy="365" r="3" fill="#3B82F6"/><circle cx="200" cy="365" r="3"/>
+  </g>
+  <text x="460" y="369" font-family="Inter, sans-serif" font-size="10" fill="#64748B" text-anchor="end">48-PORT SWITCH</text>
+
+  <g stroke="#2563EB" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M 30 30 L 30 55 M 30 30 L 55 30"/>
+    <path d="M 570 30 L 570 55 M 570 30 L 545 30"/>
+    <path d="M 30 420 L 30 395 M 30 420 L 55 420"/>
+    <path d="M 570 420 L 570 395 M 570 420 L 545 420"/>
+  </g>
+</svg>
