@@ -75,7 +75,7 @@ function getFooter(basePath) {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 SDA Integrations LLC. All rights reserved.</span>
+      <span>© 2026 SDA Integrations LLC. All rights reserved.</span>
       <span>Valley Glen, CA · Serving Greater Los Angeles</span>
     </div>
   </footer>`;
