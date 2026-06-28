@@ -1,42 +1,43 @@
 # SDA Integrations — Website
 
-Корпоративный сайт SDA Integrations (CCTV, контроль доступа, структурированные кабельные системы). Лос-Анджелес, Калифорния.
+Corporate website for SDA Integrations — CCTV, access control, and low-voltage systems contractor based in Valley Glen, Los Angeles, CA.
 
-Статичный сайт — чистый HTML/CSS/JS, без фреймворков и сборки. Хостится на Netlify, деплой автоматический при каждом push в ветку `main`.
+Static site — plain HTML/CSS/JS, no frameworks or build tools. Hosted on Netlify with automatic deployment on every push to the `main` branch.
 
-## Структура
+## File Structure
 
 ```
 .
-├── index.html              # Главная страница
-├── style.css                # Общие стили всего сайта
-├── shared.js                 # Общий JS: навигация, футер, утилиты
-├── robots.txt                # Инструкции для поисковых роботов
-├── sitemap.xml                # Карта сайта для Google
+├── index.html                   # Homepage
+├── style.css                    # Global stylesheet
+├── shared.js                    # Shared JS: nav, footer injection
+├── robots.txt                   # Search engine crawl instructions
+├── sitemap.xml                  # XML sitemap for Google Search Console
 ├── pages/
-│   ├── cctv.html               # Услуга: видеонаблюдение
-│   ├── access-control.html      # Услуга: контроль доступа
-│   ├── structured-cabling.html   # Услуга: кабельные системы
-│   ├── service-areas.html         # Зоны обслуживания (LA + округа)
-│   └── contact.html                # Контакты + форма заявки (Netlify Forms)
+│   ├── cctv.html                # Service: CCTV & security cameras
+│   ├── access-control.html      # Service: access control systems
+│   ├── structured-cabling.html  # Service: cabling, Wi-Fi, networks
+│   ├── service-areas.html       # Service areas (LA + surrounding cities)
+│   └── contact.html             # Contact page + quote form (Netlify Forms)
 └── images/
-    ├── logo.png                  # Логотип (версия для тёмного фона)
-    ├── favicon-32.png              # Иконка вкладки браузера
-    └── *.svg                        # Иллюстрации к разделам услуг
+    ├── logo.png                 # Logo — white text version for dark background
+    ├── favicon-32.png           # Browser tab icon
+    └── *.svg                    # Custom SVG illustrations for service sections
 ```
 
-## Как редактировать
+## How to Edit
 
-Любое изменение файла в этом репозитории (через веб-интерфейс GitHub или git push) автоматически запускает пересборку и обновление сайта на Netlify — обычно занимает 30–60 секунд.
+Any change committed to this repository triggers an automatic redeploy on Netlify — usually within 30–60 seconds.
 
-**Текстовые правки** (телефон, цены, описания) — открыть нужный `.html` файл прямо на GitHub, нажать иконку карандаша (Edit), внести изменения, закоммитить.
+**Text edits** (phone, prices, descriptions) — open the relevant `.html` file on GitHub, click the pencil icon, make changes, commit.
 
-**Новые картинки** — добавить файл в папку `images/`, сослаться на него в HTML как `images/имя-файла.png` (с главной) или `../images/имя-файла.png` (со страниц в `pages/`).
+**New images** — upload to the `images/` folder, then reference as `images/filename.png` from the root, or `../images/filename.png` from inside `pages/`.
 
-**Структурные правки** (новые страницы, разделы) — рекомендуется делать через Claude или локально в VS Code, так как требует синхронизации навигации, sitemap.xml и Schema.org разметки.
+**Structural changes** (new pages, new sections) — recommended to do via Claude or locally in VS Code, as they require syncing navigation, sitemap.xml, and Schema.org markup.
 
-## Технические заметки
+## Technical Notes
 
-- Форма на `pages/contact.html` использует Netlify Forms — не требует бэкенда, заявки приходят на email, настроенный в Netlify → Forms → Notifications.
-- Все страницы услуг имеют статичную Schema.org (JSON-LD) разметку прямо в `<head>` — при изменении контента услуги стоит обновить и соответствующее описание в разметке.
-- Canonical URL на каждой странице должен совпадать с её реальным путём (см. `sitemap.xml` для списка актуальных адресов).
+- Contact form on `pages/contact.html` uses **Netlify Forms** — no backend needed. Submissions go to email configured under Netlify → Forms → Notifications.
+- Each page has static **Schema.org JSON-LD** markup directly in `<head>`. Update service descriptions there if service page content changes significantly.
+- **Canonical URL** on each page must match its real path (see `sitemap.xml` for the full list of correct URLs).
+- Domain: `sdaintegrations.com` (non-www). Netlify redirects `www.` → non-www automatically.
